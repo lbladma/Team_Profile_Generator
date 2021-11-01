@@ -1,3 +1,81 @@
+<b><h1 align="center">Team Profile Generator</h1> </b>
+  
+#
+#
+## Summary 
+#
+This app is based on building a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
+
+#
+#
+
+## Table of Contents
+#
+
+- [Summary](#Summary)
+- [Screenshots](Screenshots)
+- [Technologies](#technologies)
+- [Link](#link)
+#
+#
+## Screenshots
+
+<img width="600" height="400" alt="image1" src="images\image1.png">
+
+
+
+<img width="600" height="400" alt="image2" src="images\image2.png">
+
+
+<img width="600" height="400" alt="image3" src="images\image3.png">
+
+<img width="600" height="400" alt="image4" src="images\image4.png">
+
+<br>
+
+#
+#
+<br>
+
+## Technologies
+<img align="left" width="26px" alt="CSS" src="images\react.png">
+<img align="left" width="26px" alt="HTML" src="images\html.png">
+<img align="left" width="26px" alt="Node" src="images\node.png">
+<img align="left" width="26px" alt="JS" src="./images\JS.png">
+<img align="left" width="26px" alt="Github" src="images\github.png">
+<img align="left" width="26px" alt="CSS" src="images\jquery.png">
+<img align="left" width="26px" alt="HTML" src="images\materialize.png">
+<img align="left" width="26px" alt="Node" src="images\mongo.png">
+<img align="left" width="26px" alt="JS" src="./images\node-js.png">
+<img align="left" width="26px" alt="Github" src="images\css.png">
+<img align="left" width="26px" alt="Node" src="images\bootstrap.png">
+<img align="left" width="26px" alt="JS" src="./images\express.png">
+<img align="left" width="26px" alt="Github" src="images\git.png">
+
+<br><br>
+
+#
+#
+
+
+## Links 
+
+
+This is the link to my github Repo [GitHub](https://github.com/lbladma/Team_Profile_Generator).
+
+#
+This is the Live Demo link for the project [Demo](https://www.awesomescreenshot.com/video/5846892?key=80e437fceb82bb7f307944b672988c8d).
+
+
+
+#
+#
+#
+#
+#
+#
+
+
 # 10 Object-Oriented Programming: Team Profile Generator
 
 ## Your Task
