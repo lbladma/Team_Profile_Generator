@@ -58,22 +58,20 @@ This app is based on building a Node.js command-line application that takes in i
 #
 
 
-## Links 
+## Link to Github Repo
 
 
 This is the link to my github Repo [GitHub](https://github.com/lbladma/Team_Profile_Generator).
-
 #
+
+
+## Link to Live Demo 
+
 This is the Live Demo link for the project [Demo](https://www.awesomescreenshot.com/video/5846892?key=80e437fceb82bb7f307944b672988c8d).
 
-![Video from awesomescreenshot.com](https://www.awesomescreenshot.com/web/video/thumbnail/5846892?key=80e437fceb82bb7f307944b672988c8d&size=960) 
-
-<b>Click the link below to watch the video: </b>
- https://www.awesomescreenshot.com/video/5846892?key=80e437fceb82bb7f307944b672988c8d 
 
 
-#
-#
+
 #
 #
 #
