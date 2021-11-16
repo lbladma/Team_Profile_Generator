@@ -1,4 +1,4 @@
-// this is the template for the manager profile card
+
 const managerCard = function(Manager) {
     return `
     <div>
@@ -16,7 +16,7 @@ const managerCard = function(Manager) {
     </div>`
 };
 
-// This is the template for the intern profile card
+
 const internCard = function(Intern) {
     return `
     <div>
@@ -34,7 +34,7 @@ const internCard = function(Intern) {
     </div>`
 };
 
-// This is the template for the engineer profile card
+
 const engineerCard = function(Engineer) {
     return `
     <div>
@@ -52,22 +52,21 @@ const engineerCard = function(Engineer) {
     </div>`
 };
 
-// This function will take the data that is provided by the user and creates the respectiful cards
-// like manager, employee, engineer and interns.
-// Once created, each 'card' is pushed into an array to be held for later use. 
+
+
 const createCard = function(data) {
 
-    // This is where the team card is being held as an array
+
     teamArray = [];
 
     for (let a = 0; a < data.length; a ++) {
-        // This basically assigns the worker onto a contant thus allowing data to be pulled from it
+
         const worker = data[a];
-        // This line should help get the role of each individual on the team 
-        // this determnines which card is created based on the role
+
+
         const role = worker.getRole();
 
-        // here we determine which card is created based on role
+
         if (role === "Manager") {
             const manCard = managerCard(worker);
             teamArray.push(manCard);
@@ -90,7 +89,7 @@ const createCard = function(data) {
 };
 
 
-// This function here should create the entire html page including the head and body
+
 const generateTeamPage = function(employeeCards) {
     return `
     <!DOCTYPE html>
