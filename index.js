@@ -1,21 +1,20 @@
-// Necessary node Modules
+
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-// This section imports the HTML creation function
+
 const createCard = require('./src/profileGenerator');
 
-// Team class modules 
+
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
-//This is where team is stored
+
 const profileArray = [];
 
 
-// Here are questions that will be asked to gather the users input
-// These questions are for Managers
+
 const recruitMan = () => {
     return inquirer.prompt([
         {
@@ -39,8 +38,8 @@ const recruitMan = () => {
             message: "What is the manager's office number?"
         },
     ])
-    // Once the above prompts have been asnwered it gets stored 
-    // and then creats a new object using the answer as parameters
+
+
     .then(managerInfo => {
         const {name, id, email, officeNum} = managerInfo;
         const manager = new Manager(name, id, email, officeNum);
@@ -49,11 +48,11 @@ const recruitMan = () => {
     })
 };
 
-// These questions are for Employees and can be used to add to Engineers or Intern employees
+
 const recruitEm = () => {
     return inquirer.prompt([
         {
-            // This how to make choices on the node.js
+
             type: 'list',
             name: 'role',
             message: "What is the employees's role?",
@@ -94,8 +93,8 @@ const recruitEm = () => {
         }
     ])
 
-    // Once the above prompts have been asnwered it gets stored 
-    // and then creats a new object using the answer as parameters
+
+
     .then(employeeInfo => {
         let {name, id, email, role, github, school, addEmployee} = employeeInfo;
         let employee;
@@ -110,7 +109,7 @@ const recruitEm = () => {
 
         profileArray.push(employee);
 
-        // This checks to user wants to add additional team members
+
         if (addEmployee) {
             return recruitEm(profileArray);
         } else {
@@ -119,7 +118,7 @@ const recruitEm = () => {
     })
 }
 
-// This function or block of lines should help wrtie the HTML
+
 const createHTML = data => {
     fs.writeFile('./dist/index.html', data, err => {
         console.log(data),
@@ -127,7 +126,7 @@ const createHTML = data => {
     })
 }
 
-// The couple of lines should help get the input from the user
+
 recruitMan ()
     .then(recruitEm).then(profileArray => {
         return createCard(profileArray);
